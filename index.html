@@ -13,78 +13,60 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
             color: #4A2C2A;
         }
         .container {
-            padding: 40px;
+            padding: 30px;
             background: white;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            max-width: 450px;
             width: 90%;
-        }
-        .logo-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 20px;
+            margin: 20px;
         }
         .logo-text {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: bold;
             color: #C0392B;
+            margin-bottom: 15px;
+        }
+        .hero-image {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
         }
         p {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 30px;
-            line-height: 1.5;
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-weight: 500;
         }
         .footer {
             font-size: 0.9rem;
             color: #999;
-            margin-top: 40px;
-        }
-        .tea-glass {
-            width: 60px;
-            height: 80px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo-container">
-            <!-- Neues, elegantes türkisches Teeglas -->
-            <svg class="tea-glass" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-                <!-- Untertasse -->
-                <ellipse cx="50" cy="105" rx="40" ry="10" fill="#F0F0F0" stroke="#D0D0D0" stroke-width="2"/>
-                <ellipse cx="50" cy="105" rx="25" ry="5" fill="#E8E8E8"/>
-                
-                <!-- Glas (Tulpenform: oben breit, Mitte schmal, unten breit) -->
-                <path d="M 25 15 C 40 40, 35 70, 35 90 L 65 90 C 65 70, 60 40, 75 15 Z" fill="rgba(255, 255, 255, 0.4)" stroke="#D0D0D0" stroke-width="2"/>
-                
-                <!-- Tee (Flüssigkeit) -->
-                <path d="M 31 25 C 42 45, 39 70, 39 85 L 61 85 C 61 70, 58 45, 69 25 Z" fill="#8B2500" />
-                
-                <!-- Schaum/Bläschen oben auf dem Tee -->
-                <circle cx="45" cy="26" r="2.5" fill="#D2691E" />
-                <circle cx="55" cy="28" r="1.5" fill="#D2691E" />
-                <circle cx="50" cy="24" r="1" fill="#D2691E" />
-
-                <!-- Lichtreflex auf dem Glas (links) -->
-                <path d="M 35 30 C 38 50, 38 70, 38 85" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="3" stroke-linecap="round"/>
-            </svg>
-            <div class="logo-text">Çay1</div>
-        </div>
-        <h1>Yakında Hizmetinizde</h1>
-        <p>Geleneksel çay kültürünü modern teknolojiyle buluşturuyoruz. Çok yakında sizlerle!</p>
+        <div class="logo-text">Çay1</div>
+        
+        <!-- Dein neues Banner-Bild -->
+        <img src="cay1-banner.jpg" alt="Çay1 Ürünleri" class="hero-image">
+        
+        <!-- Dein neuer Text -->
+        <h1>Biraz Sabır, Hazırlanıyoruz</h1>
+        <p>Artık Çaylarınızı, sıcak ve soğuk içeceklerinizi, hatta Simit ve Böreklerinizi ışık hızında sipariş edebileceksiniz.</p>
+        
         <div class="footer">
             &copy; 2026 Çay1. Tüm hakları saklıdır. | cay1.com.tr
         </div>
